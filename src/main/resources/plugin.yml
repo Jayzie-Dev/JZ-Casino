@@ -1,0 +1,36 @@
+name: JZ-Casino
+version: ${version}
+main: me.jz.casino.CasinoPlugin
+api-version: '1.20'
+author: JZ
+description: Production-grade casino plugin with Slot Machine, Dice, and Blackjack
+website: https://github.com/jz/casino
+
+depend: [Essentials]
+
+permissions:
+  casino.use:
+    description: Allows access to casino games
+    default: true
+  casino.admin:
+    description: Allows access to admin dashboard
+    default: op
+  casino.slot:
+    description: Allows access to slot machine
+    default: true
+  casino.dice:
+    description: Allows access to dice game
+    default: true
+  casino.blackjack:
+    description: Allows access to blackjack (V2)
+    default: true
+
+commands:
+  casino:
+    description: Open casino menu
+    usage: /casino
+    permission: casino.use
+  casinoadmin:
+    description: Open admin dashboard
+    usage: /casinoadmin
+    permission: casino.admin

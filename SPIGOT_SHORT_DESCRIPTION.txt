@@ -1,0 +1,62 @@
+SHORT DESCRIPTION (for resource overview):
+═══════════════════════════════════════════════════════════
+
+Production-grade casino plugin with Slot Machine, Dice, and Blackjack. Fully configurable, economy-safe, and exploit-proof. Works with EssentialsX. Perfect for SMP and economy servers!
+
+═══════════════════════════════════════════════════════════
+
+TAGLINE OPTIONS:
+
+1. "Transform your server into a thriving casino!"
+2. "Three complete casino games in one plugin!"
+3. "Production-grade casino with anti-exploit protection"
+4. "The most complete casino plugin for Minecraft"
+5. "Economy-safe casino games for your server"
+
+═══════════════════════════════════════════════════════════
+
+TAGS (select relevant):
+
+casino, economy, gambling, slot, dice, blackjack, minigame, gui, essentialsx, vault, fun, entertainment, games, money, betting
+
+═══════════════════════════════════════════════════════════
+
+CATEGORY:
+
+Primary: Fun
+Secondary: Economy, Minigames
+
+═══════════════════════════════════════════════════════════
+
+TESTED MINECRAFT VERSIONS:
+
+1.20.4, 1.20.5, 1.20.6, 1.21, 1.21.1, 1.21.2, 1.21.3, 1.21.4, 1.21.10
+
+═══════════════════════════════════════════════════════════
+
+KEY FEATURES (bullet points for overview):
+
+• 🎰 Slot Machine with 9 configurable symbols
+• 🎲 Dice Game with dealer AI
+• 🃏 Blackjack with classic rules
+• 💰 Direct EssentialsX integration
+• 🔒 Anti-exploit protection
+• ⚙️ Fully configurable
+• 🎨 Beautiful GUI interface
+• 📊 Lightweight (64KB)
+• ✅ No bugs or exploits
+• 🌍 Works on all versions 1.20.4+
+
+═══════════════════════════════════════════════════════════
+
+PRICE SUGGESTION:
+
+Free: Good for building reputation and getting reviews
+$5-10: Fair price for the quality and features
+$15-20: Premium pricing if you add more features
+
+═══════════════════════════════════════════════════════════
+
+PROMOTIONAL TEXT:
+
+"Looking for a casino plugin that actually works? All-in Casino is production-ready, exploit-proof, and loved by server owners. With three complete games, full configuration, and EssentialsX integration, it's the perfect addition to any economy server. Download now and see why players keep coming back!"

@@ -1,0 +1,99 @@
+# All-in Casino Plugin Configuration
+# Production-grade casino system with economy integration
+
+# Economy Settings
+economy:
+  # Currency symbol displayed in messages
+  currency-symbol: "$"
+
+# Global Casino Settings
+casino:
+  # Cooldown between games (in seconds)
+  cooldown: 5
+  # Minimum bet amount
+  min-bet: 10.0
+  # Maximum bet amount (set to very high for no practical limit)
+  max-bet: 1000000000.0
+
+# Slot Machine Configuration
+slot:
+  enabled: true
+  # Animation settings
+  animation:
+    # Duration of spin animation in ticks (20 ticks = 1 second)
+    duration: 60
+    # Ticks between each animation frame
+    frame-delay: 3
+  # House edge percentage (0-100) - affects overall RTP
+  house-edge: 5.0
+  # Symbol configuration: weight determines probability, multiplier determines payout
+  symbols:
+    CHERRY:
+      weight: 40
+      multiplier: 1.5
+      display-name: "§c🍒 Cherry"
+    LEMON:
+      weight: 30
+      multiplier: 2.0
+      display-name: "§e🍋 Lemon"
+    ORANGE:
+      weight: 20
+      multiplier: 3.0
+      display-name: "§6🍊 Orange"
+    WATERMELON:
+      weight: 15
+      multiplier: 4.0
+      display-name: "§a🍉 Watermelon"
+    GRAPE:
+      weight: 12
+      multiplier: 5.0
+      display-name: "§5🍇 Grape"
+    BELL:
+      weight: 8
+      multiplier: 8.0
+      display-name: "§e🔔 Bell"
+    SEVEN:
+      weight: 5
+      multiplier: 12.0
+      display-name: "§c7️⃣ Seven"
+    DIAMOND:
+      weight: 3
+      multiplier: 15.0
+      display-name: "§b💎 Diamond"
+    JACKPOT:
+      weight: 2
+      multiplier: 20.0
+      display-name: "§6⭐ Jackpot"
+
+# Dice Game Configuration
+dice:
+  enabled: true
+  # Payout multiplier for winning (2.0 = double your bet)
+  win-multiplier: 2.0
+  # House edge percentage (affects actual odds)
+  house-edge: 2.0
+  # Animation delay in ticks before revealing result
+  reveal-delay: 40
+
+# Blackjack Configuration (V2 Feature)
+blackjack:
+  enabled: true
+  # Payout for regular win (1.0 = even money)
+  win-multiplier: 1.0
+  # Payout for blackjack (1.5 = 3:2 payout)
+  blackjack-multiplier: 1.5
+  # Dealer stands on this value
+  dealer-stand: 17
+  # House edge percentage
+  house-edge: 1.0
+
+# Message Configuration
+messages:
+  prefix: "§6§l[Casino] §r"
+  insufficient-funds: "§cYou don't have enough money! Required: {amount}"
+  cooldown-active: "§cPlease wait {seconds} seconds before playing again."
+  bet-too-low: "§cMinimum bet is {min}!"
+  bet-too-high: "§cMaximum bet is {max}!"
+  game-in-progress: "§cYou already have a game in progress!"
+  no-permission: "§cYou don't have permission to do that!"
+  economy-error: "§cEconomy system error. Please contact an administrator."

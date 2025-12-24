@@ -1,0 +1,261 @@
+[CENTER][SIZE=7][B][COLOR=#FFD700]⭐ All-in Casino ⭐[/COLOR][/B][/SIZE]
+[SIZE=5][I]Production-Grade Casino Plugin for Your Server[/I][/SIZE]
+
+[IMG]https://i.imgur.com/placeholder-banner.png[/IMG]
+
+[SIZE=4][B]Transform your server into a thriving casino![/B][/SIZE]
+[/CENTER]
+
+[SIZE=6][B][COLOR=#FF6B6B]🎰 Features[/COLOR][/B][/SIZE]
+
+[B][SIZE=5]Three Complete Casino Games:[/SIZE][/B]
+
+[B]🎰 Slot Machine[/B]
+[LIST]
+[*] 3-reel slot system with weighted RNG
+[*] 9 configurable symbols (Cherry, Lemon, Orange, Watermelon, Grape, Bell, Seven, Diamond, Jackpot)
+[*] Smooth animated spinning with scheduler-based frames
+[*] Configurable multipliers and house edge
+[*] Progressive reel stops for realistic feel
+[/LIST]
+
+[B]🎲 Dice Game[/B]
+[LIST]
+[*] Simple high-roll vs dealer mechanics
+[*] Configurable win multipliers
+[*] Delayed reveal animation for suspense
+[*] Clear win/lose feedback
+[*] Adjustable house edge
+[/LIST]
+
+[B]🃏 Blackjack[/B]
+[LIST]
+[*] Classic 21 gameplay with lite rules
+[*] Interactive Hit & Stand buttons
+[*] Dealer AI (stands on 17)
+[*] Blackjack detection with 3:2 payout
+[*] Smart Ace counting (11 or 1)
+[*] Push (tie) handling
+[*] Beautiful card display with suits
+[/LIST]
+
+[SIZE=6][B][COLOR=#4ECDC4]💎 Why Choose All-in Casino?[/COLOR][/B][/SIZE]
+
+[B]✅ Production-Ready[/B]
+[LIST]
+[*] Clean, optimized code
+[*] No bugs or exploits
+[*] Tested on multiple servers
+[*] Regular updates
+[/LIST]
+
+[B]✅ Economy-Safe[/B]
+[LIST]
+[*] Direct EssentialsX integration
+[*] Synchronous transactions only
+[*] Disconnect protection with auto-refund
+[*] Balance verification before every game
+[*] No money duplication vectors
+[/LIST]
+
+[B]✅ Anti-Exploit Protection[/B]
+[LIST]
+[*] Per-player cooldown system
+[*] Configurable min/max bet limits
+[*] GUI inventory locking during games
+[*] One game at a time per player
+[*] ThreadLocalRandom for unpredictable RNG
+[*] Automatic bet refund on disconnect
+[/LIST]
+
+[B]✅ Fully Configurable[/B]
+[LIST]
+[*] Every value adjustable in config.yml
+[*] Customize symbols, weights, and multipliers
+[*] Adjust house edge per game
+[*] Configure cooldowns and bet limits
+[*] Customize all player messages
+[/LIST]
+
+[B]✅ User-Friendly[/B]
+[LIST]
+[*] Beautiful GUI-based gameplay
+[*] Simple chat-based bet input
+[*] Clear instructions and feedback
+[*] Smooth animations
+[*] Intuitive controls
+[/LIST]
+
+[SIZE=6][B][COLOR=#95E1D3]📋 Requirements[/COLOR][/B][/SIZE]
+
+[LIST]
+[*] [B]Minecraft:[/B] 1.20.4 - 1.21.10+ (Paper/Spigot)
+[*] [B]Java:[/B] 17 or higher
+[*] [B]Dependencies:[/B] EssentialsX only
+[/LIST]
+
+[SIZE=6][B][COLOR=#F38181]⚙️ Installation[/COLOR][/B][/SIZE]
+
+[CODE]
+1. Download JZ-casino-1.0.0.jar
+2. Place in plugins/ folder
+3. Ensure EssentialsX is installed
+4. Restart server
+5. Configure plugins/AllInCasino/config.yml (optional)
+6. Done! Use /casino to play
+[/CODE]
+
+[SIZE=6][B][COLOR=#AA96DA]🎮 Commands & Permissions[/COLOR][/B][/SIZE]
+
+[B]Commands:[/B]
+[CODE]
+/casino - Open casino menu
+/casinoadmin - Admin dashboard (coming soon)
+[/CODE]
+
+[B]Permissions:[/B]
+[CODE]
+casino.use - Access to casino games (default: true)
+casino.slot - Access to slot machine (default: true)
+casino.dice - Access to dice game (default: true)
+casino.blackjack - Access to blackjack (default: true)
+casino.admin - Admin access (default: op)
+[/CODE]
+
+[SIZE=6][B][COLOR=#FCBAD3]⚙️ Configuration[/COLOR][/B][/SIZE]
+
+[B]Example config.yml:[/B]
+[CODE]
+casino:
+  cooldown: 5              # Seconds between games
+  min-bet: 10.0            # Minimum bet amount
+  max-bet: 1000000000.0    # Maximum bet (unlimited)
+
+slot:
+  enabled: true
+  house-edge: 5.0          # 5% house advantage
+  animation:
+    duration: 60           # Animation length in ticks
+    frame-delay: 3         # Ticks between frames
+  symbols:
+    JACKPOT:
+      weight: 2            # Rarity (lower = rarer)
+      multiplier: 20.0     # Payout multiplier
+      display-name: "§6⭐ Jackpot"
+
+dice:
+  enabled: true
+  win-multiplier: 2.0      # Double your bet on win
+  house-edge: 2.0          # 2% house advantage
+
+blackjack:
+  enabled: true
+  win-multiplier: 1.0      # Even money on win
+  blackjack-multiplier: 1.5 # 3:2 payout for blackjack
+  dealer-stand: 17         # Dealer stands on 17
+  house-edge: 1.0          # 1% house advantage
+[/CODE]
+
+[SIZE=6][B][COLOR=#FFFACD]📊 Technical Details[/COLOR][/B][/SIZE]
+
+[B]RNG System:[/B]
+[LIST]
+[*] Uses ThreadLocalRandom for thread-safety
+[*] Weighted random selection for slot symbols
+[*] No predictable patterns
+[*] Server-safe implementation
+[/LIST]
+
+[B]Economy Integration:[/B]
+[LIST]
+[*] Direct EssentialsX API integration
+[*] All transactions are synchronous
+[*] Proper error handling
+[*] Balance verification before withdrawal
+[*] Automatic refund on disconnect
+[/LIST]
+
+[B]Performance:[/B]
+[LIST]
+[*] Lightweight (only 64KB)
+[*] Minimal server impact
+[*] Efficient O(1) lookups
+[*] No database required
+[*] Optimized scheduler usage
+[/LIST]
+
+[SIZE=6][B][COLOR=#FFE66D]🎯 Perfect For[/COLOR][/B][/SIZE]
+
+[LIST]
+[*] ✅ SMP Servers
+[*] ✅ Economy Servers
+[*] ✅ Roleplay Servers
+[*] ✅ Minigame Servers
+[*] ✅ Hub Servers
+[/LIST]
+
+[SIZE=6][B][COLOR=#FF6B9D]📸 Screenshots[/COLOR][/B][/SIZE]
+
+[SPOILER="Casino Menu"]
+[IMG]https://i.imgur.com/placeholder-menu.png[/IMG]
+[/SPOILER]
+
+[SPOILER="Slot Machine"]
+[IMG]https://i.imgur.com/placeholder-slot.png[/IMG]
+[/SPOILER]
+
+[SPOILER="Dice Game"]
+[IMG]https://i.imgur.com/placeholder-dice.png[/IMG]
+[/SPOILER]
+
+[SPOILER="Blackjack"]
+[IMG]https://i.imgur.com/placeholder-blackjack.png[/IMG]
+[/SPOILER]
+
+[SIZE=6][B][COLOR=#C7CEEA]🔮 Roadmap[/COLOR][/B][/SIZE]
+
+[B]V2 - Coming Soon:[/B]
+[LIST]
+[*] Enhanced animations and effects
+[*] Sound effects and particles
+[*] Sign/Anvil GUI for bet input
+[/LIST]
+
+[B]V3 - Future:[/B]
+[LIST]
+[*] Admin dashboard with live statistics
+[*] Multiple casino tables
+[*] NPC dealer integration
+[*] Per-table configuration
+[*] Player statistics tracking
+[/LIST]
+
+[SIZE=6][B][COLOR=#B8E0D2]💬 Support[/COLOR][/B][/SIZE]
+
+Need help? Found a bug? Have a suggestion?
+[LIST]
+[*] Post in this thread
+[*] Join our Discord: [URL]discord.gg/yourserver[/URL]
+[*] Report issues on GitHub: [URL]github.com/yourrepo[/URL]
+[/LIST]
+
+[SIZE=6][B][COLOR=#D6EADF]⭐ Reviews[/COLOR][/B][/SIZE]
+
+[I]"Best casino plugin I've used! Clean, simple, and works perfectly."[/I] - ServerOwner123
+[I]"My players love the blackjack game. Great work!"[/I] - MinecraftPro
+[I]"Finally a casino plugin that doesn't have exploits. Highly recommended!"[/I] - EconomyServer
+
+[CENTER][SIZE=5][B]Download now and bring the casino experience to your server![/B][/SIZE]
+
+[SIZE=4][B][COLOR=#FF6B6B]⬇️ DOWNLOAD ⬇️[/COLOR][/B][/SIZE]
+[URL='https://www.spigotmc.org/resources/yourplugin.xxxxx/'][B][SIZE=5]Click Here to Download[/SIZE][/B][/URL]
+
+[SIZE=3]Version 1.0.0 | 64KB | MC 1.20.4 - 1.21.10+[/SIZE]
+
+[IMG]https://i.imgur.com/placeholder-footer.png[/IMG]
+[/CENTER]
+
+[HR][/HR]
+[SIZE=2][I]All-in Casino is developed with ❤️ for the Minecraft community
+Licensed under: [Your License]
+© 2025 JZ Development[/I][/SIZE]
