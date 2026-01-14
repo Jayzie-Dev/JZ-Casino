@@ -49,18 +49,22 @@ public class BlackjackGame extends CasinoGame {
 
     /**
      * Player hits (takes another card).
+     * @return The card that was dealt, or null if hit was not allowed
      */
-    public void hit() {
+    public BlackjackCard hit() {
         if (playerTurnComplete || !playerHand.canHit()) {
-            return;
+            return null;
         }
 
-        playerHand.addCard(deck.deal());
+        BlackjackCard newCard = deck.deal();
+        playerHand.addCard(newCard);
 
         // Check if bust or 21
         if (playerHand.isBust() || playerHand.getValue() == 21) {
             stand(); // Auto-stand
         }
+        
+        return newCard;
     }
 
     /**

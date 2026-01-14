@@ -288,7 +288,16 @@ public class BlackjackGUI {
     public void handleHit() {
         if (!game.canHit()) return;
 
-        game.hit();
+        BlackjackCard newCard = game.hit();
+        
+        // Show player what card they got
+        if (newCard != null) {
+            Player player = game.getPlayer();
+            player.sendMessage(config.getPrefix() + "§7You drew: " + newCard.getDisplayName() 
+                + " §7(Value: §f" + newCard.getValue() + "§7)");
+            player.sendMessage(config.getPrefix() + "§7Your hand value: §a" + game.getPlayerHand().getValue());
+        }
+        
         updateDisplay();
 
         // Check if game ended
